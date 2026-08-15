@@ -12,10 +12,13 @@ FROM ghcr.io/containerpak/mesa64:main
 
 LABEL org.opencontainers.image.source="https://github.com/Containerpak/cemu"
 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libopengl0 && \
+    cpak-clean-junk
+
 COPY --from=source /stage/ /opt/cemu/
 COPY cemu /usr/bin/cemu
 COPY cemu.desktop /usr/share/applications/cemu.desktop
 COPY icon.png /usr/share/icons/hicolor/128x128/apps/cemu.png
 
 RUN chmod 0755 /usr/bin/cemu && cpak-clean-junk
-
