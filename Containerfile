@@ -13,7 +13,7 @@ FROM ghcr.io/containerpak/gtk3:main
 LABEL org.opencontainers.image.source="https://github.com/Containerpak/cemu"
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends libopengl0 && \
+    apt-get install -y --no-install-recommends libice6 libopengl0 libsm6 && \
     cpak-clean-junk
 
 COPY --from=source /stage/ /opt/cemu/
