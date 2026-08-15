@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Cemu
+Comment=Play Wii U games with an open source emulator.
+Exec=cemu %U
+Icon=cemu
+Terminal=false
+Categories=Game;Emulator;
+
