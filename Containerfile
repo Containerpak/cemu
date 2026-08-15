@@ -8,7 +8,7 @@ RUN chmod 0755 /tmp/app.AppImage && \
     mkdir -p /stage && \
     cp -a /tmp/squashfs-root/. /stage/
 
-FROM ghcr.io/containerpak/mesa64:main
+FROM ghcr.io/containerpak/gtk3:main
 
 LABEL org.opencontainers.image.source="https://github.com/Containerpak/cemu"
 
