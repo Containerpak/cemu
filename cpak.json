@@ -4,7 +4,7 @@
   "name": "Cemu",
   "description": "Play Wii U games with an open source emulator.",
   "version": "2.6",
-  "image": "ghcr.io/containerpak/cemu@sha256:82235ecc842bc90bed9fd5bf0512e38546ae82899858641886545a9e4c84b189",
+  "image": "ghcr.io/containerpak/cemu@sha256:0a1c0f5fb1f240eb02aafcc2c453f8d32484a0da86f4b4b69c0e80b9f11d5655",
   "binaries": [
     "/usr/bin/cemu"
   ],
